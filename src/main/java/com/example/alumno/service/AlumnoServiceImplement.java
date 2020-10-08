@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class AlumnoServiceImplement extends BaseServiceImplements<Alumnos, Long> implements AlumnoService{
+public class AlumnoServiceImplement extends BaseServiceImplement<Alumnos, Long> implements AlumnoService{
 
 
     @Autowired
@@ -17,7 +17,7 @@ public class AlumnoServiceImplement extends BaseServiceImplements<Alumnos, Long>
     }
 
     @Override
-    public List<Alumno> finall() throws Exception {
+    public List<Alumnos> finall() throws Exception {
         return null;
     }
 }
