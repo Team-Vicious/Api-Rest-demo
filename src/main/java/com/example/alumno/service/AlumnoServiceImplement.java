@@ -16,8 +16,5 @@ public class AlumnoServiceImplement extends BaseServiceImplement<Alumnos, Long> 
         super(baseRepository);
     }
 
-    @Override
-    public List<Alumnos> finall() throws Exception {
-        return null;
-    }
+
 }

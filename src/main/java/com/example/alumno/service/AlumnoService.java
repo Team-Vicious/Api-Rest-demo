@@ -2,6 +2,6 @@ package com.example.alumno.service;
 
 import com.example.alumno.entities.Alumnos;
 
-public interface AlumnoService  extends baseService<Alumnos, Long> {
+public interface AlumnoService  extends BaseService<Alumnos, Long> {
 
 }

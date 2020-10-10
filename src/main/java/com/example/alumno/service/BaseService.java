@@ -2,16 +2,16 @@ package com.example.alumno.service;
 
 import com.example.alumno.entities.Base;
 
-import javax.transaction.Transactional;
+
 import java.io.Serializable;
 import java.util.List;
 
-public interface baseService  <E extends Base, ID extends Serializable>{
+public interface BaseService<E extends Base, ID extends Serializable>{
 
-    public List<E> finall() throws Exception;
 
-    @Transactional
-    List<E> findall() throws Exception;
+
+
+    public List<E> findAll() throws Exception;
 
     public E findById(ID id) throws Exception;
     public E save(E entity) throws Exception;
