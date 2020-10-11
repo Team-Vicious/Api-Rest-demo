@@ -3,6 +3,7 @@ package com.example.alumno.entities.audit;
 import com.example.alumno.config.CustomRevisionListener;
 import lombok.Data;
 import org.hibernate.envers.RevisionEntity;
+import org.hibernate.envers.RevisionNumber;
 import org.hibernate.envers.RevisionTimestamp;
 
 import javax.persistence.*;
@@ -24,6 +25,7 @@ public class Revision implements Serializable {
             name = "revision_seq",
             sequenceName="rbac.seq_revision_id"
     )
+    @RevisionNumber
     private int id;
 
     @Column(name = "REVISION_DATE")
